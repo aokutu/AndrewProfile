@@ -1,0 +1,1041 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Andrew Okutu | Software Developer</title>
+
+    <meta name="description"
+          content="Andrew Okutu — Software Developer building practical web applications, backend systems, APIs and digital solutions.">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: #050505;
+        }
+
+        .grid-bg {
+            background-image:
+                linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 1px);
+            background-size: 50px 50px;
+        }
+
+        .project-card {
+            transition:
+                transform 0.3s ease,
+                border-color 0.3s ease,
+                background-color 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-7px);
+            border-color: rgba(255,255,255,.25);
+            background-color: rgba(255,255,255,.05);
+        }
+
+        .nav-link {
+            position: relative;
+        }
+
+        .nav-link::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -7px;
+            width: 0;
+            height: 1px;
+            background: white;
+            transition: width .25s ease;
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body class="bg-[#050505] text-white antialiased">
+
+<!-- =========================================================
+     NAVIGATION
+========================================================= -->
+
+<header class="fixed top-0 left-0 right-0 z-50
+               border-b border-white/10
+               bg-black/80 backdrop-blur-xl">
+
+    <nav class="max-w-7xl mx-auto px-5 lg:px-8
+                h-20 flex items-center justify-between">
+
+        <a href="#home"
+           class="text-xl font-bold tracking-tight">
+            AO<span class="text-white/30">.</span>
+        </a>
+
+        <div class="hidden md:flex items-center gap-8
+                    text-sm text-white/60">
+
+            <a href="#about"
+               class="nav-link hover:text-white transition">
+                About
+            </a>
+
+            <a href="#projects"
+               class="nav-link hover:text-white transition">
+                Projects
+            </a>
+
+            <a href="#skills"
+               class="nav-link hover:text-white transition">
+                Skills
+            </a>
+
+            <a href="#contact"
+               class="nav-link hover:text-white transition">
+                Contact
+            </a>
+
+        </div>
+
+        <a href="#contact"
+           class="rounded-full border border-white/20
+                  px-5 py-2.5 text-sm
+                  hover:bg-white hover:text-black
+                  transition">
+
+            Let's talk
+
+        </a>
+
+    </nav>
+
+</header>
+
+
+<main>
+
+<!-- =========================================================
+     HERO
+========================================================= -->
+
+<section id="home"
+         class="relative min-h-screen
+                flex items-center
+                overflow-hidden grid-bg">
+
+    <!-- Background glow -->
+
+    <div class="absolute inset-0
+                bg-[radial-gradient(circle_at_70%_30%,rgba(255,255,255,.08),transparent_30%)]">
+    </div>
+
+
+    <div class="relative max-w-7xl mx-auto
+                px-5 lg:px-8
+                pt-24 w-full">
+
+        <div class="max-w-5xl">
+
+            <div class="flex items-center gap-3
+                        text-sm text-white/40 mb-7">
+
+                <span class="w-10 h-px bg-white/30"></span>
+
+                SOFTWARE DEVELOPER
+
+            </div>
+
+
+            <h1 class="text-5xl sm:text-7xl lg:text-8xl
+                       font-bold
+                       tracking-[-0.05em]
+                       leading-[1.02]">
+
+                I build software
+
+                <span class="block text-white/30">
+                    that solves real problems.
+                </span>
+
+            </h1>
+
+
+            <p class="mt-8 max-w-2xl
+                      text-lg sm:text-xl
+                      leading-8
+                      text-white/50">
+
+                I'm Andrew Okutu, a software developer focused on
+                web applications, backend systems, APIs,
+                infrastructure and practical digital solutions.
+
+            </p>
+
+
+            <div class="mt-10 flex flex-wrap gap-4">
+
+                <a href="#projects"
+                   class="rounded-full
+                          bg-white text-black
+                          px-7 py-3.5
+                          text-sm font-semibold
+                          hover:bg-white/80
+                          transition">
+
+                    View my projects
+
+                </a>
+
+
+                <a href="#contact"
+                   class="rounded-full
+                          border border-white/20
+                          px-7 py-3.5
+                          text-sm font-semibold
+                          hover:bg-white/5
+                          hover:border-white/40
+                          transition">
+
+                    Get in touch
+
+                </a>
+
+            </div>
+
+
+            <div class="mt-16
+                        flex flex-wrap gap-x-8 gap-y-3
+                        text-sm text-white/30">
+
+                <span>PHP / Laravel</span>
+                <span>Golang</span>
+                <span>JavaScript</span>
+                <span>AWS</span>
+                <span>DevOps</span>
+                <span>Cybersecurity</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="absolute bottom-8
+                left-1/2 -translate-x-1/2
+                text-xs text-white/25">
+
+        SCROLL ↓
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     ABOUT
+========================================================= -->
+
+<section id="about"
+         class="border-t border-white/10">
+
+    <div class="max-w-7xl mx-auto
+                px-5 lg:px-8
+                py-24 lg:py-32">
+
+        <div class="grid lg:grid-cols-[0.7fr_1.3fr]
+                    gap-14">
+
+            <div>
+
+                <p class="text-sm uppercase
+                          tracking-[.25em]
+                          text-white/30">
+
+                    01 — About
+
+                </p>
+
+
+                <h2 class="mt-5
+                           text-4xl sm:text-5xl
+                           font-bold
+                           tracking-tight">
+
+                    Developer.<br>
+                    Problem solver.
+
+                </h2>
+
+            </div>
+
+
+            <div>
+
+                <p class="text-xl
+                          leading-9
+                          text-white/70">
+
+                    I enjoy turning real-world problems
+                    into working software.
+
+                    My background spans software development,
+                    IT support, systems, infrastructure
+                    and cybersecurity.
+
+                </p>
+
+
+                <p class="mt-6
+                          leading-8
+                          text-white/40">
+
+                    I work across backend development,
+                    web applications, APIs, databases,
+                    Linux environments and cloud technologies.
+
+                    I enjoy building practical systems that
+                    solve actual problems rather than simply
+                    demonstrating technology.
+
+                </p>
+
+
+                <div class="grid sm:grid-cols-3
+                            gap-4 mt-10">
+
+                    <div class="border border-white/10
+                                rounded-2xl p-5">
+
+                        <div class="text-3xl font-bold">
+                            01
+                        </div>
+
+                        <p class="mt-2 text-sm text-white/40">
+                            From idea to working system
+                        </p>
+
+                    </div>
+
+
+                    <div class="border border-white/10
+                                rounded-2xl p-5">
+
+                        <div class="text-3xl font-bold">
+                            02
+                        </div>
+
+                        <p class="mt-2 text-sm text-white/40">
+                            Backend & API development
+                        </p>
+
+                    </div>
+
+
+                    <div class="border border-white/10
+                                rounded-2xl p-5">
+
+                        <div class="text-3xl font-bold">
+                            03
+                        </div>
+
+                        <p class="mt-2 text-sm text-white/40">
+                            Infrastructure & security
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     PROJECTS
+========================================================= -->
+
+<section id="projects"
+         class="border-t border-white/10
+                bg-white/[.015]">
+
+    <div class="max-w-7xl mx-auto
+                px-5 lg:px-8
+                py-24 lg:py-32">
+
+        <div class="flex flex-col
+                    sm:flex-row
+                    sm:items-end
+                    sm:justify-between
+                    gap-6">
+
+            <div>
+
+                <p class="text-sm uppercase
+                          tracking-[.25em]
+                          text-white/30">
+
+                    02 — Selected Work
+
+                </p>
+
+
+                <h2 class="mt-5
+                           text-4xl sm:text-5xl
+                           font-bold">
+
+                    Projects I've built
+
+                </h2>
+
+            </div>
+
+
+            <p class="max-w-sm
+                      text-sm leading-6
+                      text-white/35">
+
+                Practical systems covering parking,
+                AI knowledge search, business management
+                and healthcare.
+
+            </p>
+
+        </div>
+
+
+        <div class="grid lg:grid-cols-2
+                    gap-5 mt-14">
+
+
+            <!-- PARKPLACE -->
+
+            <article class="project-card
+                            border border-white/10
+                            rounded-3xl
+                            bg-white/[.025]
+                            p-7 sm:p-9">
+
+                <div class="flex justify-between">
+
+                    <span class="rounded-full
+                                 border border-white/10
+                                 px-3 py-1
+                                 text-xs text-white/40">
+
+                        Go · WebSockets · Maps
+
+                    </span>
+
+                    <span class="text-white/20">
+                        01
+                    </span>
+
+                </div>
+
+
+                <h3 class="mt-10
+                           text-3xl font-bold">
+
+                    ParkPlace
+
+                </h3>
+
+
+                <p class="mt-4
+                          leading-7
+                          text-white/40">
+
+                    A parking information platform designed
+                    to help drivers discover recently reported
+                    parking availability using map data and
+                    near-real-time attendant updates.
+
+                </p>
+
+
+                <div class="flex flex-wrap
+                            gap-2 mt-7">
+
+                    <span class="tag">
+                        Golang
+                    </span>
+
+                    <span class="tag">
+                        Leaflet
+                    </span>
+
+                    <span class="tag">
+                        WebSockets
+                    </span>
+
+                    <span class="tag">
+                        M-Pesa
+                    </span>
+
+                </div>
+
+            </article>
+
+
+            <!-- GUIDELY -->
+
+            <article class="project-card
+                            border border-white/10
+                            rounded-3xl
+                            bg-white/[.025]
+                            p-7 sm:p-9">
+
+                <div class="flex justify-between">
+
+                    <span class="rounded-full
+                                 border border-white/10
+                                 px-3 py-1
+                                 text-xs text-white/40">
+
+                        AI · RAG · FastAPI
+
+                    </span>
+
+                    <span class="text-white/20">
+                        02
+                    </span>
+
+                </div>
+
+
+                <h3 class="mt-10
+                           text-3xl font-bold">
+
+                    Guidely
+
+                </h3>
+
+
+                <p class="mt-4
+                          leading-7
+                          text-white/40">
+
+                    An internal knowledge assistant that
+                    indexes documents and answers questions
+                    using semantic search, embeddings and
+                    cited source material.
+
+                </p>
+
+
+                <div class="flex flex-wrap
+                            gap-2 mt-7">
+
+                    <span class="tag">
+                        React
+                    </span>
+
+                    <span class="tag">
+                        FastAPI
+                    </span>
+
+                    <span class="tag">
+                        FAISS
+                    </span>
+
+                    <span class="tag">
+                        Gemini
+                    </span>
+
+                </div>
+
+            </article>
+
+
+            <!-- SIPPAR -->
+
+            <article class="project-card
+                            border border-white/10
+                            rounded-3xl
+                            bg-white/[.025]
+                            p-7 sm:p-9">
+
+                <div class="flex justify-between">
+
+                    <span class="rounded-full
+                                 border border-white/10
+                                 px-3 py-1
+                                 text-xs text-white/40">
+
+                        Laravel · Inertia · Payroll
+
+                    </span>
+
+                    <span class="text-white/20">
+                        03
+                    </span>
+
+                </div>
+
+
+                <h3 class="mt-10
+                           text-3xl font-bold">
+
+                    Sippar
+
+                </h3>
+
+
+                <p class="mt-4
+                          leading-7
+                          text-white/40">
+
+                    A business management platform with
+                    role-based workflows and payroll
+                    functionality covering employee salaries,
+                    deductions and payroll records.
+
+                </p>
+
+
+                <div class="flex flex-wrap
+                            gap-2 mt-7">
+
+                    <span class="tag">
+                        Laravel
+                    </span>
+
+                    <span class="tag">
+                        PHP
+                    </span>
+
+                    <span class="tag">
+                        Inertia
+                    </span>
+
+                    <span class="tag">
+                        React
+                    </span>
+
+                </div>
+
+            </article>
+
+
+            <!-- HOSPITAL -->
+
+            <article class="project-card
+                            border border-white/10
+                            rounded-3xl
+                            bg-white/[.025]
+                            p-7 sm:p-9">
+
+                <div class="flex justify-between">
+
+                    <span class="rounded-full
+                                 border border-white/10
+                                 px-3 py-1
+                                 text-xs text-white/40">
+
+                        Healthcare · Laravel · APIs
+
+                    </span>
+
+                    <span class="text-white/20">
+                        04
+                    </span>
+
+                </div>
+
+
+                <h3 class="mt-10
+                           text-3xl font-bold">
+
+                    Hospital Management
+
+                </h3>
+
+
+                <p class="mt-4
+                          leading-7
+                          text-white/40">
+
+                    Healthcare software supporting patient,
+                    billing and operational workflows,
+                    with ongoing work toward digital-health
+                    interoperability.
+
+                </p>
+
+
+                <div class="flex flex-wrap
+                            gap-2 mt-7">
+
+                    <span class="tag">
+                        Laravel
+                    </span>
+
+                    <span class="tag">
+                        PHP
+                    </span>
+
+                    <span class="tag">
+                        MySQL
+                    </span>
+
+                    <span class="tag">
+                        APIs
+                    </span>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     SKILLS
+========================================================= -->
+
+<section id="skills"
+         class="border-t border-white/10">
+
+    <div class="max-w-7xl mx-auto
+                px-5 lg:px-8
+                py-24 lg:py-32">
+
+        <div class="grid lg:grid-cols-[.7fr_1.3fr]
+                    gap-14">
+
+            <div>
+
+                <p class="text-sm uppercase
+                          tracking-[.25em]
+                          text-white/30">
+
+                    03 — Skills
+
+                </p>
+
+
+                <h2 class="mt-5
+                           text-4xl sm:text-5xl
+                           font-bold">
+
+                    Tools I use
+                    to build.
+
+                </h2>
+
+            </div>
+
+
+            <div class="grid grid-cols-2
+                        sm:grid-cols-3
+                        gap-3">
+
+                <div class="skill">
+                    PHP / Laravel
+                </div>
+
+                <div class="skill">
+                    Golang
+                </div>
+
+                <div class="skill">
+                    JavaScript
+                </div>
+
+                <div class="skill">
+                    jQuery
+                </div>
+
+                <div class="skill">
+                    AWS
+                </div>
+
+                <div class="skill">
+                    Linux
+                </div>
+
+                <div class="skill">
+                    Git
+                </div>
+
+                <div class="skill">
+                    PostgreSQL
+                </div>
+
+                <div class="skill">
+                    MySQL
+                </div>
+
+                <div class="skill">
+                    Docker
+                </div>
+
+                <div class="skill">
+                    Bash
+                </div>
+
+                <div class="skill">
+                    Cybersecurity
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     APPROACH
+========================================================= -->
+
+<section class="border-t border-white/10
+                bg-white/[.015]">
+
+    <div class="max-w-7xl mx-auto
+                px-5 lg:px-8
+                py-24 lg:py-32">
+
+        <div class="max-w-3xl">
+
+            <p class="text-sm uppercase
+                      tracking-[.25em]
+                      text-white/30">
+
+                04 — Approach
+
+            </p>
+
+
+            <h2 class="mt-5
+                       text-4xl sm:text-5xl
+                       font-bold">
+
+                Practical software
+                over unnecessary complexity.
+
+            </h2>
+
+
+            <p class="mt-7
+                      text-lg
+                      leading-8
+                      text-white/40">
+
+                I like understanding how a system works
+                from the ground up — from the database and
+                backend logic to APIs, infrastructure and
+                the user interface.
+
+                The goal is simple:
+
+                build software that is useful,
+                maintainable and able to solve
+                the problem it was created for.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     CONTACT
+========================================================= -->
+
+<section id="contact"
+         class="border-t border-white/10">
+
+    <div class="max-w-7xl mx-auto
+                px-5 lg:px-8
+                py-24 lg:py-32">
+
+        <div class="border border-white/10
+                    rounded-[2rem]
+                    bg-white/[.025]
+                    p-8 sm:p-12 lg:p-16">
+
+            <div class="max-w-3xl">
+
+                <p class="text-sm uppercase
+                          tracking-[.25em]
+                          text-white/30">
+
+                    05 — Contact
+
+                </p>
+
+
+                <h2 class="mt-5
+                           text-4xl sm:text-6xl
+                           font-bold">
+
+                    Have a problem
+                    worth solving?
+
+                </h2>
+
+
+                <p class="mt-6
+                          text-lg
+                          leading-8
+                          text-white/40">
+
+                    I'm interested in building practical
+                    software, backend systems, APIs and
+                    digital solutions.
+
+                </p>
+
+
+                <div class="flex flex-wrap
+                            gap-4 mt-10">
+
+                    <!-- CHANGE THIS EMAIL -->
+
+                    <a href="mailto:your-email@example.com"
+                       class="rounded-full
+                              bg-white text-black
+                              px-7 py-3.5
+                              text-sm font-semibold
+                              hover:bg-white/80
+                              transition">
+
+                        Email me
+
+                    </a>
+
+
+                    <!-- CHANGE THIS GITHUB -->
+
+                    <a href="https://github.com/"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="rounded-full
+                              border border-white/20
+                              px-7 py-3.5
+                              text-sm font-semibold
+                              hover:bg-white/5
+                              transition">
+
+                        GitHub
+
+                    </a>
+
+
+                    <!-- CHANGE THIS LINKEDIN -->
+
+                    <a href="https://www.linkedin.com/"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="rounded-full
+                              border border-white/20
+                              px-7 py-3.5
+                              text-sm font-semibold
+                              hover:bg-white/5
+                              transition">
+
+                        LinkedIn
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer class="border-t border-white/10">
+
+    <div class="max-w-7xl mx-auto
+                px-5 lg:px-8
+                py-8
+                flex flex-col sm:flex-row
+                gap-3
+                sm:items-center
+                sm:justify-between
+                text-sm text-white/25">
+
+        <p>
+            © 2026 Andrew Okutu.
+            Built with HTML & Tailwind CSS.
+        </p>
+
+        <a href="#home"
+           class="hover:text-white transition">
+
+            Back to top ↑
+
+        </a>
+
+    </div>
+
+</footer>
+
+
+<!-- =========================================================
+     SMALL TAILWIND COMPONENT CLASSES
+========================================================= -->
+
+<script>
+
+    document.querySelectorAll('.tag').forEach(tag => {
+        tag.className =
+            'rounded-lg bg-white/5 px-3 py-2 text-xs text-white/50';
+    });
+
+    document.querySelectorAll('.skill').forEach(skill => {
+        skill.className =
+            'rounded-2xl border border-white/10 p-5 text-white/60 hover:border-white/25 hover:text-white transition';
+    });
+
+</script>
+
+</body>
+</html>
